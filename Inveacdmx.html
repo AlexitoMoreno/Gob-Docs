@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejemplo de nueva página para GOB.mx</title>
+
+
+    <!-- CSS -->
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="Styles.css" rel="stylesheet">
+    <link href="Stylesinveacdmx.css" rel="stylesheet">
+    <style>
+	        
+            * {font-family: 'Inter' !important;}
+            *{box-shadow: none !important;}                 
+            
+            .ventana-header>#ventana-info_header>#ventana-info_closer>span.ui-icon.ui-icon-closethick   { 		
+                background-image: url(/resources/img/close2.svg); 
+                 background-size: 20px 21px !important; 
+                 background-position: 0 !important; 
+                 position: relative; 
+                 top: 25px !important; 
+                 width: 20px !important; 
+                 height: 24px !important; 
+                 left: -130% !important;
+            }
+        
+            #page-container {
+                position: relative;
+                min-height: 100vh;
+                overflow-x: hidden !important;
+            }
+            
+            #content-wrap {
+                padding-bottom: 0rem; /* Footer height */
+            }
+            
+            #footer {
+                /*position: absolute; */
+                bottom: 0;
+                width: 100%;
+                /* height: 1.5rem;  Footer height */
+                background-color: #00312d !important;
+            }
+            
+            #header {
+                background: transparent !important;
+                background-color: transparent !important;
+                position: relative;
+                top: 0;
+                width: 100%;
+            }
+                    
+            .adjustContent {
+                margin-left: auto;
+                max-width: 1280px;
+                margin-right: auto;
+                background-size: 100%;
+                background-position-y: 30%;
+                display: grid !important;
+            }
+            
+            .img-background {
+    /* 			background-image: linear-gradient( */
+    /* 							      rgba(0, 0, 0, 0.5), */
+    /* 							      rgba(0, 0, 0, 0.5) */
+    /* 							    ),url(/resources/img/fondo-portal.jpg); */
+    /* 			background-image: linear-gradient( rgb(0 0 0 / 0%), rgb(0 0 0 / 40%) ),url(/resources/img/fondo-portal.jpg); */
+    /* 			background-image: url('background-image: url('https://es.rankiapro.com/wp-content/uploads/2019/08/fondo-tecnologico-preferido-selectores.jpg');'); */
+    /*  			background-image: url(/resources/img/fondo-portal.jpg);  */
+                margin-left: auto;
+                max-width: 100%;
+                margin-right: auto;
+                height: 100%;
+                background-size: cover;
+                background-position-y: 60%;
+            }				
+                    
+            .colorgreen {
+                background-color: #00312d !important;
+                margin-left: auto;
+                max-width: 1280px;
+                margin-right: auto;
+            }		
+            
+            .texto-corto-anuncios {
+                -webkit-line-clamp: 3;
+                  -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+            }	
+            
+            .texto-corto-anuncios-mobile {
+                -webkit-line-clamp: 2;
+                  -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+            }	
+            
+            .ui-g .ui-panelgrid-cell {
+                flex-wrap: initial;
+                place-items: center !important;
+                /*background-color: transparent !important;*/
+            }
+            
+            .menu-header{
+                display: flex;
+                justify-content: left;
+                text-underline-position: under;
+            }
+            
+            .menu-header:hover {
+                text-decoration: none;
+            }
+            
+            .menu-header-tags{
+                display: flex;
+                text-underline-position: under;
+                flex-direction: row;
+                align-content: stretch;
+                justify-content: flex-end;
+            }		
+            
+            .color-btn-buscar{
+                background: #BC955C !important;
+                   border-radius: 21px;
+                   width: 45px;
+                height: 42px;
+                margin-top: 0px !important;
+                margin-right: 20px !important;
+                float: left;
+                   border: none !important;
+            }	
+    
+    
+            .color-btn-buscarR{
+                background: #BC955C !important;
+                   border-radius: 21px;
+                   width: 45px;
+                height: 42px;
+                margin-top: 0px !important;
+                margin-right: 0px !important;
+                float: left;
+                   border: none !important;
+            }		
+            
+            .color-btn-buscar-false{
+                background: #AAAAAA !important;
+                   border-radius: 21px;
+                   width: 45px;
+                height: 42px;
+                margin-top: 0px !important;
+                margin-right: 20px !important;
+                float: left;
+                   border: none !important;
+            }	
+            
+            .color-btn-buscarR-false{
+                background: #AAAAAA !important;
+                   border-radius: 21px;
+                   width: 45px;
+                height: 42px;
+                margin-top: 0px !important;
+                margin-right: 0px !important;
+                float: left;
+                   border: none !important;
+            }			
+            
+            .centro{   
+                text-align-last: center;
+            }
+                @media (max-width: 640px){
+                .ui-panelgrid .ui-grid-responsive .ui-grid-row {
+                    border-top: none !important;
+    /* 			    display: flex !important; */
+                }
+            }
+        </style>
+  </head>
+  <body>
+
+    <!-- Contenido -->
+    <main class="page">
+      <div class="container">
+        <div class="grid ZeroPadding-Right menu-normal ">
+                  
+            <div class="col-12">	         		       
+              <div class="col-12 ZeroPadding"><div id="formHeader:pnlMenus" class="ui-panelgrid ui-widget ui-panel-sin-pading"><div id="formHeader:pnlMenus_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-3 ui-lg-3 ZeroPadding menu-header"><a href="/home.xhtml" class="ui-link ui-widget"><img src="https://www.cdmx.gob.mx/resources/img/adip-header2.svg"></a></div><div class="ui-panelgrid-cell ui-g-12 ui-md-9 ui-lg-9 ZeroPadding"><div id="formHeader:j_idt29" class="ui-panelgrid ui-widget ui-panel-sin-pading "><div id="formHeader:j_idt29_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-12 ui-lg-12 menu-header-tags ZeroPadding-Right"><a href="https://thecity.mx/" class="ui-link ui-widget menu-header-principal" target="_blank">Visitantes</a>	 &nbsp; &nbsp;                       
+                          <a href="https://gobierno.cdmx.gob.mx/" class="ui-link ui-widget menu-header-principal" target="_blank">Gobierno</a>	 &nbsp; &nbsp;                       
+                          </div><div id="formHeader:j_idt34" class="ui-panelgrid-cell ui-g-12 ui-md-0 ui-lg-0 ZeroPadding"></div></div></div></div></div></div></div></div>               
+            </div>
+             </div>
+     
+      </div>
+      <form role="form" style="margin-top: 25px;">
+        <div class="form-group">
+            <h3> RESULTADO DE LA CONSULTA </h3>
+          </div>
+
+        <div class="form-group" style="margin-top: 35px;">
+          <label class="control-label" for="lblAsunto">ASUNTO</label>
+          <input class="form-control" id="txtAsunto" placeholder="ASUNTO" type="text">
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="lblFecha">FECHA</label>
+          <input class="form-control" id="txtFecha" placeholder="FECHA" type="text">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="lblVerificador">VERIFICADOR</label>
+            <input class="form-control" id="txtVerificador" placeholder="VERIFICADOR" type="text">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="lblAsignacion">ASIGNACIÓN DE VERIFICACIÓN</label>
+            <input class="form-control" id="txtAsignacion" placeholder="ASIGNACIÓN DE VERIFICACIÓN" type="text">
+          </div>
+        <div class="form-group">
+            <label class="control-label" for="lblFolio">FOLIO</label>
+            <input class="form-control" id="txtFolio" placeholder="FOLIO" type="text">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="lblHora">HORA</label>
+            <input class="form-control" id="txtHora" placeholder="HORA" type="text">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="lblDudas">DUDAS Y ACLARACIONES Al </label>
+            <input rows="3" class="form-control" id="txtDudas" placeholder="DUDAS Y ACLARACIONES" type="text"></input>
+          </div>
+      </form>
+      </div>
+    </main>
+    <div id="footer">
+
+        <div class="grid grid-nogutter colorgreen max-width-footer" style="">            
+            <div class="col-12">
+                <div class="grid pt-5">
+                    <div class="lg:col-3 md:col-6"><img src="https://www.cdmx.gob.mx/resources/img/logo_footer.svg" style="max-width: 100%; width: 219.5px; height: 55px; padding-left: 2%; vertical-align: middle;">
+                    </div>
+                    <div class="lg:col-2 md:col-3 sm:col-12 xs:col-12">
+                        <div class="grid p-0">
+							<div class="col-12"><label style="padding-bottom: 2%; font-family: Inter; font-size: 13.1px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.18; letter-spacing: -0.39px; text-align: left; color: #fff;" class="titulosRobo redesleft">Para emergencias, marca al <a href="tel:911" class="ui-link ui-widget titulo-footer" style="text-decoration: underline !important;" target="_blank">911</a></label>
+							</div>
+							<div class="col-12">
+								
+									<div class="col-12" style=" padding-left: 0px;"><label style="padding-bottom: 2%; font-family: Inter; font-size: 13.1px; font-weight: 300; font-stretch: normal; font-style: normal; line-height: 1.18; letter-spacing: -0.39px; text-align: left; color: #fff;" class="titulosRobo redesleft">Dudas e información, marca al <a href="tel:*0311" class="ui-link ui-widget titulo-footer" style="text-decoration: underline !important;" target="_blank">*0311</a></label>
+									</div>
+								
+							</div>
+                        </div>
+                    </div>
+                    <div class="lg:col-2 md:col-6 sm:col-12 xs:col-12">
+                       	 <div class="grid p-0">
+                            <div class="col-12"><label style="padding-bottom: 2%; font-family: Inter; font-size: 13.1px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.18; letter-spacing: -0.39px; text-align: left; color: #fff;" class="titulosRobo redesleft">Redes de la ciudad</label>
+                            </div>
+                            <div class="col-12">
+                                <div class="grid p-0">
+                                    <div class="col-3"><a href="https://es-la.facebook.com/GobiernoCDMX/" class="ui-link ui-widget" target="_blank"><img id="j_idt155" src="https://www.cdmx.gob.mx/resources/img/facebook.svg?pfdrid_c=true" alt="" style="width: 27.7px; height: 27.7px;"></a>
+                                    </div>
+                                    <div class="col-3"><a href="https://twitter.com/GobCDMX" class="ui-link ui-widget" target="_blank"><img id="j_idt158" src="	https://www.cdmx.gob.mx/resources/img/twitter.svg?pfdrid_c=true" alt="" style="width: 30.8px; height: 24.6px;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-3 md:col-6 sm:col-12 xs:col-12">
+                       	<div class="grid p-0">
+                            <div class="col-12"><label style="padding-bottom: 2%; font-family: Inter; font-size: 13.1px; font-weight: bold; font-stretch: normal; font-style: normal; line-height: 1.18; letter-spacing: -0.39px; text-align: left; color: #fff;" class="titulosRobo redesleft">Sitios relacionados</label>                                                                 
+                            </div>
+                            <div class="col-12"><a href="https://adip.cdmx.gob.mx/" class="ui-link ui-widget titulo-footer" style="padding-bottom: 2% !important; text-decoration: underline !important; font-weight: 300 !important;" target="_blank">Agencia Digital de Innovación Pública</a>
+                            </div>
+                            
+                            <div class="col-12"><label style="padding-bottom: 2%;" class="titulo-footer">Transparencia</label>
+                             </div> 
+                            <div class="col-12">
+                            <div class="grid p-0" style="max-width: 231px;">
+	                            	<div class=" col-10"><a id="idPortalUlrtrans" href="https://www.transparencia.cdmx.gob.mx/" class="ui-link ui-widget footerAlingleft ZeroPadding-Bottom" style="color: white; padding-bottom: 2%; white-space: nowrap; vertical-align: sub;  text-decoration: underline !important; font-weight: 300 !important;" target="_blank">Ir al portal de transparencia</a>
+			                         </div>       
+			                          <div class="col-2" style="padding-bottom: 0px;    padding-top: 12px;    padding-left: 0px;"><a href="https://www.transparencia.cdmx.gob.mx/" class="ui-link ui-widget footerAlingleft ZeroPadding-Bottom" style="  text-decoration: underline !important;" target="_blank"><img src="https://www.cdmx.gob.mx/resources/img/arrow.png" style="width: 11.5px;" class=""></a>
+			                          </div> 
+			                     </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-2 md:col-6 sm:col-12 xs:col-12">
+                       	<div class="grid p-0 grecaFooter-Datos-Abiertos" style="text-align: center;">
+                            <div class="col-12" style="padding-bottom: 0!important;"><a href="http://datos.cdmx.gob.mx/" class="ui-link ui-widget" target="_blank"><img id="j_idt171" src="https://www.cdmx.gob.mx/resources/img/datos.png?pfdrid_c=true" alt="" style="width: 131px; height: 81px;"></a>
+                            </div>
+                            <div class="col-12" style="padding-top: 0!important;"><label style="padding-bottom: 5%;" class="footerAlingleft">Portal de datos abiertos</label>
+                                 	 <br><label style="padding-bottom: 5%;" class="footerH6Alingleft">Explora, analiza, visualiza y descarga bases de datos de la CDMX</label>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+		  <div class="espacio-cintillo"></div>
+		  <div class="cintilloFooter colorgreen"></div>
+    </div>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+  
+  $( document ).ready(function() {
+    console.log( "ready!" );
+    const keysValues = window.location.search;
+    console.log( keysValues);
+    const urlParams = new URLSearchParams(keysValues)
+    debugger;
+    const Params = urlParams.get('Params')
+    const URLlimpia = Params.replace(/!/g,' ');
+    const Parametros = URLlimpia.split("|");
+    
+    $("#txtAsunto").val(Parametros[0])
+    $("#txtFecha").val(Parametros[1])
+    $("#txtVerificador").val(Parametros[2])
+    $("#txtAsignacion").val(Parametros[3])
+    $("#txtFolio").val(Parametros[4])
+    $("#txtHora").val(Parametros[5])
+    $("#txtDudas").val(Parametros[6])
+});
+</script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejemplo de nueva página para GOB.mx</title>
+
+
+    <!-- CSS -->
+    <link href="/favicon.ico" rel="shortcut icon">
+    <link href="Styles.css" rel="stylesheet">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container"><div class="navbar-header"><a class="navbar-brand" href="https://www.gob.mx/"><img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" width="128" height="48" alt="PÃƒÂ¡gina de inicio, Gobierno de MÃƒÂ©xico"></a></div><div class="collapse navbar-collapse" id="navbarMainCollapse"><ul class="nav navbar-nav navbar-right"></ul></div></div></nav>
+  </head>
+  <body>
+
+    <!-- Contenido -->
+    <main class="page">
+      <div class="container">
+        <form role="form" style="margin-top: 25px;">
+            <div class="form-group">
+                <h3> RESULTADO DE LA CONSULTA </h3>
+              </div>
+
+            <div class="form-group" style="margin-top: 35px;">
+              <label class="control-label" for="txtExpediente">NUMERO DE EXPEDIENTE</label>
+              <input class="form-control" id="txtExpediente" placeholder="Numero de expediente" type="text">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="txtFecha">FECHA</label>
+              <input class="form-control" id="txtFecha" placeholder="Fecha" type="text">
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="txtExtablecimiento">ESTABLECIMIENTO</label>
+              <input class="form-control" id="txtExtablecimiento" placeholder="Establecimiento" type="text">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="txtObjetoAlcance">OBJETO DE ALCANCE</label>
+                <textarea class="form-control" id="txtObjetoAlcance" placeholder="Alcance" rows="3">CON FUNDAMENTO EN LO ESCRITO EN EL ART 123 CONSTITUCIONAL PARA SUS TRABAJADORES ESTA CONSULTA ES DE TIPO PROTOCOLO DE CONDICIONALES GENERALES DE TRABAJO PARA SUS TRABAJADORES BAJO LAS NOM-O30 NOM-031 Y NOM-035
+                </textarea>
+              </div>
+            <div class="form-group">
+                <label class="control-label" for="txtTitular">TITULAR</label>
+                <input class="form-control" id="txtTitular" placeholder="Titular" type="text">
+              </div>
+          </form>
+      </div>
+    </main>
+    <footer class="main-footer"><div class="list-info"><div class="container"><div class="row"><div class="col-sm-3"><img data-v-9e928f9a="" src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" href="/" alt="logo gobierno de mÃƒÂ©xico" class="logo_footer" style="max-width: 90%;"></div><div class="col-sm-3"><h5>Enlaces</h5><ul><li><a href="https://participa.gob.mx" target="_blank" rel="noopener" title="Enlace abre en ventana nueva">Participa</a></li><li><a href="https://www.gob.mx/publicaciones" target="_blank" rel="noopener" title="Enlace abre en ventana nueva">Publicaciones Oficiales</a></li><li><a href="http://www.ordenjuridico.gob.mx" target="_blank" rel="noopener" title="Enlace abre en ventana nueva">Marco Jurídico</a></li><li><a href="https://consultapublicamx.inai.org.mx/vut-web/" target="_blank" rel="noopener" title="Enlace abre en ventana nueva">Plataforma Nacional de Transparencia</a></li><li><a href="https://alertadores.funcionpublica.gob.mx/" target="_blank" rel="noopener" title="Enlace abre en ventana nueva">Alerta</a></li><li><a href="https://sidec.funcionpublica.gob.mx" target="_blank" rel="noopener" title="Enlace abre en ventana nueva">Denuncia</a></li></ul></div><div class="col-sm-3"><h5>¿Qué es gob.mx?</h5><p>Es el portal único de trámites, información y participación ciudadana. <a href="https://www.gob.mx/que-es-gobmx">Leer más</a></p><ul><li><a href="https://datos.gob.mx">Portal de datos abiertos</a></li><li><a href="https://www.gob.mx/accesibilidad">Declaración de accesibilidad</a></li><li><a href="https://www.gob.mx/privacidadintegral">Aviso de privacidad integral</a></li><li><a href="https://www.gob.mx/privacidadsimplificado">Aviso de privacidad simplificado</a></li><li><a href="https://www.gob.mx/terminos">Términos y Condiciones</a></li><li><a href="https://www.gob.mx/terminos#medidas-seguridad-informacion">Política de seguridad</a></li><li><a href="https://www.gob.mx/sitemap">Mapa de sitio</a></li></ul></div><div class="col-sm-3"><h5><a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a></h5><h5>Síguenos en</h5><ul class="list-inline"><li><a class="social-icon facebook" target="_blank" rel="noopener" title="Enlace abre en ventana nueva" href="https://www.facebook.com/gobmexico" aria-label="Facebook de presidencia"></a></li><li><a class="social-icon twitter" target="_blank" rel="noopener" title="Enlace abre en ventana nueva" href="https://twitter.com/GobiernoMX" aria-label="Twitter de presidencia"></a></li></ul></div></div></div></div><div class="container-fluid footer-pleca"><div class="row"><div class="col"><br><br></div></div></div></footer>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+  
+  $( document ).ready(function() {
+    console.log( "ready!" );
+    const keysValues = window.location.search;
+    console.log( keysValues);
+    const urlParams = new URLSearchParams(keysValues)
+    debugger;
+    const Params = urlParams.get('Params')
+    const URLlimpia = Params.replace(/!/g,' ');
+    const Parametros = URLlimpia.split("|");
+    
+    $("#txtExpediente").val(Parametros[0])
+    $("#txtFecha").val(Parametros[1])
+    $("#txtExtablecimiento").val(Parametros[2])
+    $("#txtTitular").val(Parametros[3])
+});
+</script>
+  </body>
+</html>
