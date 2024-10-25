@@ -29,7 +29,7 @@ $( document ).ready(function() {
 		var url = "";
 		if($('#selectFormulario').val() == "1")
 		{
-			url = "https://unclaimed-capacitor.000webhostapp.com/Index.html";
+			url = "https://alexitomoreno.github.io/Gob-Docs/Index.html";
 			$('#divCdmx').show();
 			$('#divInveamex').hide();
 			$('#divInvea').hide();
@@ -41,7 +41,7 @@ $( document ).ready(function() {
 		}
 		else if ($('#selectFormulario').val() == "2")
 		{
-			url = "https://unclaimed-capacitor.000webhostapp.com/Inveamex.html"
+			url = "https://alexitomoreno.github.io/Gob-Docs/Inveamex.html"
 			$('#divInveamex').show();
 			$('#divCdmx').hide();
 			$('#divInvea').hide();
@@ -52,7 +52,7 @@ $( document ).ready(function() {
 		}
 		else
 		{
-			url = "https://unclaimed-capacitor.000webhostapp.com/Inveacdmx.html"
+			url = "https://alexitomoreno.github.io/Gob-Docs/Inveacdmx.html"
 			$('#divInveamex').hide();
 			$('#divCdmx').hide();
 			$('#divInvea').show();
