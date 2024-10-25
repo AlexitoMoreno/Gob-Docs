@@ -184,16 +184,90 @@
     <!-- Contenido -->
     <main class="page">
       <div class="container">
-        <div class="grid ZeroPadding-Right menu-normal ">
-                  
-            <div class="col-12">	         		       
-              <div class="col-12 ZeroPadding"><div id="formHeader:pnlMenus" class="ui-panelgrid ui-widget ui-panel-sin-pading"><div id="formHeader:pnlMenus_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-3 ui-lg-3 ZeroPadding menu-header"><a href="/home.xhtml" class="ui-link ui-widget"><img src="https://www.cdmx.gob.mx/resources/img/adip-header2.svg"></a></div><div class="ui-panelgrid-cell ui-g-12 ui-md-9 ui-lg-9 ZeroPadding"><div id="formHeader:j_idt29" class="ui-panelgrid ui-widget ui-panel-sin-pading "><div id="formHeader:j_idt29_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-12 ui-lg-12 menu-header-tags ZeroPadding-Right"><a href="https://thecity.mx/" class="ui-link ui-widget menu-header-principal" target="_blank">Visitantes</a>	 &nbsp; &nbsp;                       
-                          <a href="https://gobierno.cdmx.gob.mx/" class="ui-link ui-widget menu-header-principal" target="_blank">Gobierno</a>	 &nbsp; &nbsp;                       
-                          </div><div id="formHeader:j_idt34" class="ui-panelgrid-cell ui-g-12 ui-md-0 ui-lg-0 ZeroPadding"></div></div></div></div></div></div></div></div>               
-            </div>
-             </div>
-     
-      </div>
+        <form id="formHeader" name="formHeader" method="post" action="/home.xhtml" enctype="application/x-www-form-urlencoded">
+            <input type="hidden" name="formHeader" value="formHeader">
+            
+                    <div id="header">
+            
+                <style>
+                    @media screen and (max-width: 640px) {
+                        .alinear-texto{
+                            text-align: left;
+                        }
+                    }
+                    
+                    @media screen and (min-width: 641px) {
+                        .alinear-texto{
+                            text-align: right;
+                        }
+                    }	
+                    
+                    .ui-panel .ui-panel-content {	
+                        border: none !important;	    
+                        background: transparent !important;
+                        padding: 0px !important;	   
+                    }
+                    
+                    .ui-widget-header {
+                        background: none !important;
+                        border: none;
+                    }
+                    
+                    .ui-state-default, .ui-widget-content .ui-state-default,
+                        .ui-widget-header .ui-state-default {
+                        border: none;
+                        background: none;
+                    }
+                    
+                    .ui-panel .ui-panel-titlebar {
+                        padding: 6px 0px 0px;
+                        height: 0px;
+                        border: none !important;
+                    }
+                    
+                    .derecha {
+                        text-align: right;
+                    }
+                    
+                    .izquierda {
+                    }
+                    .alinear-texto{                  
+                        place-self: center;
+                    }
+                    
+                    #ventana-info_header .ui-panel-title{                   
+                        display: none;
+                    }
+                        
+                        
+                
+                </style>
+            
+                
+                <div class="adjustContent">
+                    <div class="menu-normal ">                  
+                      <div class="col-12"><div id="formHeader:pnlMenus" class="ui-panelgrid ui-widget ui-panel-sin-pading"><div id="formHeader:pnlMenus_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-4 ui-lg-4 p-0 menu-header-tags fonfo-t"><a href="/home.xhtml" class="ui-link ui-widget"><img src="https://www.cdmx.gob.mx/resources/img/expediente/ic-adip-header-nl.svg" style="position: relative; max-width: 100%;"></a></div><div class="ui-panelgrid-cell ui-g-12 ui-md-5 ui-lg-5 p-0 fonfo-t"><div id="formHeader:j_idt29" class="ui-panelgrid ui-widget ui-panel-sin-pading" style="background: transparent;"><div id="formHeader:j_idt29_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-g"><div class="ui-panelgrid-cell ui-g-12 ui-md-12 ui-lg-12 menu-header-tags"><div id="formHeader:j_idt30" class="ui-panel ui-widget ui-widget-content ui-corner-all" data-widget="widget_formHeader_j_idt30"><div id="formHeader:j_idt30_content" class="ui-panel-content ui-widget-content"><a href="https://311locatel.cdmx.gob.mx/" class="ui-link ui-widget menu-header-principal fonfo-t" target="_blank">Atención Ciudadana</a>	 &nbsp; &nbsp;                       
+                                      <a href="https://gobierno.cdmx.gob.mx/" class="ui-link ui-widget menu-header-principal fonfo-t" target="_blank">Gobierno</a>	 &nbsp; &nbsp;                       
+                                      <a href="https://thecity.mx/" class="ui-link ui-widget menu-header-principal fonfo-t" target="_blank">Guía de Visitantes</a>	 &nbsp; &nbsp;                       
+                                      </div></div></div></div></div></div></div><div class="ui-panelgrid-cell ui-g-12 ui-md-3 ui-lg-3 p-0 fonfo-t"><a id="formHeader:btnInicio" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;formHeader:btnInicio&quot;,f:&quot;formHeader&quot;});return false;" style="float: right; zoom: 80%;"><img id="formHeader:j_idt38" src="/resources/img/expediente/img_btn_expediente_new.svg?pfdrid_c=true" alt=""></a></div></div></div></div>               
+                     </div>
+                   
+                    </div>
+                </div><div id="formHeader:idGridMenuRespon" class="ui-panelgrid ui-widget ui-grid-col-12 ZeroPadding-Right menu-responsive" style="margin: 0; width: 100%; text-align: right; background: #FFFFFF; justify-content: space-around; box-shadow: 0px 2.66667px 3.55556px 1.77778px rgba(0, 0, 0, 0.15) !important;"><div id="formHeader:idGridMenuRespon_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-5 text-left"><a href="/home.xhtml" class="ui-link ui-widget"><img src="https://www.cdmx.gob.mx/resources/img/expediente/ic-adip-header-nl.svg" style="height:48px; max-height: 100% " class="img-header pt-1 menu-responsive"></a></div><div class="ui-panelgrid-cell ui-grid-col-6 adip-posicion-llave p-0"><a id="formHeader:j_idt45" href="#" class="ui-commandlink ui-widget" onclick="PrimeFaces.ab({s:&quot;formHeader:j_idt45&quot;,f:&quot;formHeader&quot;});return false;" style="float: right; zoom: 100%;"><img id="formHeader:j_idt46" src="https://www.cdmx.gob.mx/resources/img/expediente/img_btn_expediente_mobile_new.svg?pfdrid_c=true" alt="" style="width: 156px;max-width: 109%;"></a></div><div class="ui-panelgrid-cell ui-grid-col-0.5 adip-posicion-llave"><button id="formHeader:j_idt47" name="formHeader:j_idt47" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only menu-responsive claseButttonHeader" onclick="PF('sidebar1').show()" style="font-size: 25px; background-image: url(/resources/img/menu-mobile.svg) !important; background-repeat: no-repeat !important; height: 17px; width: 27px; border: none;top: 1px; border-radius: 0; zoom: 150%;" type="button" role="button" aria-disabled="false"><span class="ui-button-text ui-c"></span></button></div></div></div></div>
+                
+                <style>				
+                    @media (max-width: 640px){
+                        #formHeader .ui-panelgrid .ui-grid-responsive .ui-grid-row {
+                            border-top: none !important; 
+                             display: flex !important; 
+                        }
+                    }
+                    .ui-sidebar-close {
+                        visibility: collapse;		   
+                    }	
+                </style>
+                    </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="5904036011978370628:3847346527223584086" autocomplete="off">
+            </form>
       <form role="form" style="margin-top: 25px;">
         <div class="form-group">
             <h3> RESULTADO DE LA CONSULTA </h3>
