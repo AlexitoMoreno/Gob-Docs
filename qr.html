@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Código QR con Javascript</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="estilos.css" />
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script defer src="app.js"></script>
+		
+	</head>
+	<body>
+		<div class="contenedor">
+			<form action="" id="formulario" class="formulario">
+				<select class="form-select form-select-lg mb-3" aria-label="Selecciona un formato" id="selectFormulario">
+  					<option selected>Selecciona una un documento</option>
+  					<option value="1">CDMX</option>
+  					<option value="2">INVEAMEX EDO</option>
+					<option value="3">INVEA CDMX</option>
+				</select>
+				<div id="divCdmx">
+					<input type="text" id="link" placeholder="Escribe el texto o URL" />
+					<input type="text" id="txtExp" placeholder="Escribe el expediente" />
+					<input type="text" id="txtFecha" placeholder="Escribe la fecha" />
+					<input type="text" id="txtEst" placeholder="Escribe el establecimiento" />
+					<input type="text" id="txtTitular" placeholder="Escribe el titular" />
+					<button class="btn" type="button" id="btnQRCDMX">Generar QR</button>
+
+				</div>
+				<div id="divInveamex">
+					<input type="text" id="Invlink" placeholder="Escribe el texto o URL" />
+					<input type="text" id="InvAsunto" placeholder="Asunto" />
+					<input type="text" id="InvFolio" placeholder="Folio" />
+					<input type="text" id="InvFechaNot" placeholder="Fecha Notificación" />
+					<input type="text" id="InvFechavis" placeholder="Fecha Visita" />
+					<input type="text" id="InvHoravis" placeholder="Hora Visita" />
+					<input type="text" id="InvVerificador" placeholder="Verificador" />
+					<input type="text" id="InvrRazonSoc" placeholder="Razon Social" />
+					<textarea id="InvDireccion" type="text" class="form-control" placeholder="DireccionFiscal"></textarea>
+					<button class="btn" type="button" id="btnQRInveamex">Generar QR</button>
+				</div>
+				<div id="divInvea">
+					<input type="text" id="Invcdmxlink" placeholder="Escribe el texto o URL" />
+					<input type="text" id="InvcdmxAsunto" placeholder="Asunto"/>
+					<input type="text" id="InvcdmxFecha" placeholder="Fecha"/>
+					<input type="text" id="InvcdmxVerificador" placeholder="Verificador"/>
+					<input type="text" id="InvcdmxAsignacion" placeholder="Asignacion de verificacion"/>
+					<input type="text" id="InvcdmxFolio" placeholder="Folio"/>
+					<input type="text" id="InvcdmxHora" placeholder="Hora"/>
+					<input type="text" id="InvcdmxDudas" placeholder="Dudas y aclaraciones"/>
+					<button class="btn" type="button" id="btnQRInvea">Generar QR</button>
+				</div>
+				
+				
+				
+			</form>
+
+			<div id="contenedorQR" class="contenedorQR"></div>
+		</div>
+	</body>
+
+</html>
+
